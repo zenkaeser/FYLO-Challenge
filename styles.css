@@ -1,0 +1,197 @@
+/*element styles*/
+body {font-size: 18px; font-family: 'Open Sans', sans-serif;}
+header {	display: flex; justify-content: space-between;	padding: 70px;}
+li {list-style: none;}
+a {text-decoration: none; color: black;}
+h1, h2, h3 {font-family: 'Raleway', sans-serif;}
+h1, h2 {font-size: 2.8rem; line-height: 3.9rem; margin: 0; }
+h3 {font-size: 2rem;}
+p {line-height: 25px;}
+input {margin-right: 10px;}
+
+/*header styles*/
+#wrapper {max-width: 1440px; margin:auto;}
+.header-nav ul {display: flex; justify-content: space-between;}
+.header-nav ul li {margin-left: 50px;}
+.logo {width: 190px; height: 55px;}
+
+/*upper div styles*/
+.upper-div-image {width: 50%;}
+.upper-div {display: flex;	padding: 0 70px;}
+.upper-div-span {display: flex; width: 85%;}
+.upper-div-content {align-self: center; width: 80%; margin-bottom: 50px;}
+.upper-div-content p {width: 90%; text-align: justify;}
+
+/*mid div styles*/
+.mid-div {
+	background-image: url("images/bg-curve-desktop.svg");
+	background-repeat: no-repeat;
+	background-size:  400% 100%;
+	background-position: center;
+	margin: 150px 0 0;
+	display: flex;
+	padding: 50px 70px 0; 
+}
+.mid-div-image {width: 45%; margin: 110px 0;}
+.mid-div-content {margin: 100px 0;}
+.mid-div p, .bottom-div p {width: 80%;}
+.mid-div-testimony {
+	background-color: white; 
+	width: 40%;
+	font-size: 14px;
+	padding: 30px 40px;	
+	margin-top: 50px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px hsl(0, 0%, 81%);
+}
+.mid-div-testimony p{margin: 5px 0 15px; width: 100%;	line-height: 30px;}
+.mid-div-icon-quotes {width: 20px; height: 20px;}
+.mid-div-avatar-testimonial {width: 30px;	height: 30px;	border-radius: 50%;}
+.mid-div-testimony-profile {display: flex;}
+.mid-div-testimony-profile p {margin: 0 10px 0;	line-height: 15px;}
+.mid-div-special-link {color: hsl(170, 45%, 43%); border-bottom: 1px solid;}
+
+/*bottom-div styles*/
+.bottom-div {
+	display: flex;
+	align-items: top;
+	padding: 100px 70px;
+	background-color: hsl(238, 22%, 44%);
+	color: hsl(240, 75%, 98%);
+}
+.bottom-div-content {width: 55%;}
+.bottom-div div:last-child {width: 45%; margin-left: 50px;}
+.bottom-div input {display: block; margin-bottom: 15px;}
+.bottom-div-heading {margin: 0 0 10px;}
+
+input[type=text] {
+	padding: 15px 20px;
+	border-radius: 2px;
+	color: hsl(0, 0%, 75%);
+	width: 80%;
+	border-style: solid;
+}
+input[type=button] {
+	background-color: hsl(224, 93%, 58%);
+	border: 0;
+	border-radius: 3px;
+	color: white;
+	padding: 15px 50px;
+	width: 210px;
+}
+a:hover {font-weight: 700;}
+.social > a:hover {filter: brightness(50%);}
+::placeholder {color: hsl(0, 0%, 75%);}
+
+/*footer styles*/
+footer {background-color: hsl(243, 87%, 12%); padding: 120px 70px 50px;}
+footer a {color: hsl(240, 75%, 98%);}
+footer .logo {filter: brightness(0) invert(1);}
+.footer-div {display: flex; justify-content: space-between; margin-top: 20px;}
+.footer-div-contact {margin-bottom: 20px; display: block;}
+.footer-div > div {width: 25%;}
+.footer-nav {display: flex; flex-direction: column; width: 20%;}
+.footer-nav ul {margin:0;}
+.footer-nav li {margin: 0 0 20px;}
+.icon {margin-right: 25px; width: 25px; height: 20px;}
+.icon-social {
+	width: 15px; 
+	height: 15px; 
+	padding: 10px;
+	filter: brightness(0) invert(1); 
+	margin-left: 10px;
+	border: 1px solid white;
+	border-radius: 50%;
+}
+
+
+/*mobile layout*/
+@media (max-width:375px) {
+	body {margin: 0; font-size: 10px; text-align:center;}
+	header, .upper-div, .mid-div, .bottom-div, footer{padding:20px;}
+	h1{
+		font-size: 2.5em; 
+		line-height:30px;
+		font-family: 'Open Sans', sans-serif;
+	}
+	h2,h3 {
+		font-size: 1.5em; 
+		font-weight: 700; 
+		line-height: 30px;
+	}
+	p {line-height: 18px;}
+	
+	#wrapper{width:375px;}
+	.header-nav ul li {margin-left: 20px;}
+	.logo {width: 70px; height: 20px;}
+	
+	.upper-div {flex-direction: column;}
+	.upper-div-content {width: 100%; order: 2;}
+	.upper-div-content p {font-size: 1.4em; text-align: center; margin: 30px auto; width: 85%;}
+	.upper-div-image {margin: 50px auto;width: 90%; height: 200px;}
+	.upper-div-span {flex-direction: column; margin: auto;}
+	.upper-div-span > input{ margin-bottom: 12px;}
+	
+	input[type=text] {
+		width: inherit; 
+		padding: 10px 15px; 
+		border: 1px solid hsl(0, 0%, 75%);
+	}
+	input[type=button] {
+		width: 100%;
+		font-size: 1.2em; 
+	}
+	::placeholder {font-size: 10px;}
+	
+	.mid-div {	
+		background-image: url("images/bg-curve-mobile.svg"); 
+		background-repeat: no-repeat;
+		background-size:  700% 100%;
+		background-position: center;
+		margin: 20px 0 0;
+		flex-direction: column;
+	}
+	.mid-div-content {order:2; margin: 70px 0 60px;}
+	.mid-div-image {margin:50px auto 0; width: 100%; height: 200px;}
+	.mid-div p {margin: 10px 0; width: 100%; text-align: left; font-size: 1.4em;}
+	.mid-div-special-link {display: flex; margin: 50px auto; width: 35%;align-items:center; justify-content: space-between; line-height: 20px;}
+	.mid-div-testimony {
+		width: 75%;
+		margin: auto;
+		font-size: 8px;
+		padding: 15px 15px 15px 25px;
+	}
+	.mid-div-testimony p {line-height: 20px;}
+	.mid-div-icon-quotes {width:12px; height: 12px; display: block;}
+	.mid-div-testimony-profile p {font-size: 10px; margin: 0 8px;}
+	
+	.bottom-div {flex-direction: column; padding: 50px 40px;}
+	.bottom-div div:last-child  {margin: 20px auto; width: 80%;}
+	.bottom-div div input {width: 100%; padding: 10px 0; border: 0px;}
+	::placeholder {font-size: 10px; padding: 10px;}
+	.bottom-div p {
+		width: 100%; 
+		font-size: 1.4em; 
+		margin: auto;
+		line-height: 20px;
+	}
+	.bottom-div-content {width: 100%;}
+	
+	footer {padding: 60px 20px 20px; font-size: 1.5em;}
+	footer > .logo {
+		width: 170px;
+		height: 50px;
+		margin-bottom: 20px;
+		display: block;
+	}
+	.footer-div {flex-direction: column; margin: 0;}
+	.footer-div > div {width: 100%;}
+	.footer-div span {display: flex; align-items: center; margin: 10px 0;}
+	.footer-nav {margin: 20px 0 0; width: 100%;	text-align: left;}
+	.footer-nav ul {padding: 10px 0;}
+	.icon {width: 20px; height: 18px; margin-right: 20px;}
+	.social {padding: 20px 0;}
+	.social > a > img{width: 10px; height: 10px;	padding: 5px;}
+	.social > a:hover {filter: brightness(70%);}
+}
